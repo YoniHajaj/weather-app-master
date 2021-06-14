@@ -36,10 +36,8 @@ font-size: 25px;
    display: flex;
    flex-direction: row-reverse;
    margin-top: -136px;
-   justify-content: center;
    background: url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg);
    background-repeat: round;
-   justify-content: center;
    justify-content: space-around;
 }
 
