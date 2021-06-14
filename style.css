@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+
+}
+
+.h1-center{
+   width: 220px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.h3-center{
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* .main.background.url{
+   width:1500px;
+} */
+.main{
+   width: 1200px;
+   height: 500px;
+   background: url(https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/PHOTO-dark%20and%20stormy%20cloudscape-istock-1125x534-Landscape.jpg?itok=xyVD1jOK);
+   background-repeat: no-repeat;
+   /* width: 800px; */
+   /* direction: rtl; */
+   /* display: grid; */
+   display:flex;
+   flex-wrap: wrap;   /* רק בפלקס זה עובד */
+   grid-template-columns: repeat(3, 260px);
+   grid-template-rows: 300px;
+   gap: 150px;
+   /* width: 1100px; */
+   /* padding: 50px; */
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   flex-direction: row-reverse;
+   flex-wrap: nowrap;
+}
+
+.main-post{
+   margin-top: 100px;
+    color: white;
+} 
+
+
+/* .main-post a{
+   border: 3px black solid;
+   border-radius: 3px;
+   background: rgb(202, 201, 201);
+} */
+
+
+
+
+.main-post h3{
+   color: white;
+}
+.main-post img{
+   width: 60px;
+}
