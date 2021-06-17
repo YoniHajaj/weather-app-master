@@ -3,35 +3,60 @@ body{
    padding: 0;
 }
 
+
+
 .h1-center{
-   margin-left: auto;
+   background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Himmelsblau.jpg/1280px-Himmelsblau.jpg);
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   background-size: 100%;
+   /*  margin-left: auto;
    margin-right: auto;
    margin-top: 21px;
    width: 100%;
    color: aliceblue;
-   font-family:Arial, Helvetica, sans-serif;
-   text-align: center;
+   font-family:Arial, Helvetica, sans-serif;*/
+   padding-top:  10px;
+   padding-right: 10px;
+   text-align: right;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   color: cornsilk;
+   height:40px;
+   
 }
 
 .h3-center{
-   color: black;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100%;
-   text-align: center;
-   font-family: monospace;
-   font-size: 25px;
+   
+color: black;
+   
+margin-left: auto;
+   
+margin-right: auto;
+   
+width: 100%;
+   
+text-align: center;
+   
+font-family: monospace;
+   
+font-size: 25px;
 }
 
 
 .main{
    width: 100%;
-   height: 700px;
+   height: 940px;
    display: flex;
    flex-direction: row-reverse;
-   margin-top: -136px;
+   margin-top: -80px;
    background: url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg);
-   background-repeat: round;
+   background-repeat:no-repeat  round;
+   background-size: 100%; 
+   background-attachment: fixed;
+
+
+
    justify-content: space-around;
 }
 
