@@ -3,11 +3,8 @@ body{
    padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> d6577e7698b235ae044452a145058bd30ed9871e
 .h1-center{
    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Himmelsblau.jpg/1280px-Himmelsblau.jpg);
    background-repeat: no-repeat;
@@ -18,10 +15,6 @@ body{
    margin-top: 21px;
    width: 100%;
    color: aliceblue;
-<<<<<<< HEAD
-   font-family:Arial, Helvetica, sans-serif;
-   text-align: center;
-=======
    font-family:Arial, Helvetica, sans-serif;*/
    padding-top:  10px;
    padding-right: 10px;
@@ -31,7 +24,6 @@ body{
    color: cornsilk;
    height:40px;
    
->>>>>>> d6577e7698b235ae044452a145058bd30ed9871e
 }
 
 .h3-center{
@@ -54,11 +46,7 @@ font-size: 25px;
 
 .main{
    width: 100%;
-<<<<<<< HEAD
-   height: 720px;
-=======
    height: 940px;
->>>>>>> d6577e7698b235ae044452a145058bd30ed9871e
    display: flex;
    flex-direction: row-reverse;
    margin-top: -80px;
