@@ -11,8 +11,8 @@ body{
    background-attachment:fixed;
    background-size: 100%;
    /*  margin-left: auto;
+   margin-top: -1px;
    margin-right: auto;
-   margin-top: 21px;
    width: 100%;
    color: aliceblue;
    font-family:Arial, Helvetica, sans-serif;*/
@@ -23,8 +23,11 @@ body{
    font-size: 20px;
    color: cornsilk;
    height:40px;
-   
+   display: flex;
+   justify-content: space-between;
+   padding-left: 10px;
 }
+
 
 .h3-center{
    
