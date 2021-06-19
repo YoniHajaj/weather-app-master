@@ -10,13 +10,7 @@
         
         let colo = 'red'
         sear.addEventListener("click",(params)=>{
-            if(colo === 'green' ){
-                colo = 'red';
-               form.style.backgroundColor = colo;
-            }else{
-                colo = 'green'
-                form.style.backgroundColor = colo;
-            }
+            
                 })
         
         function search(e) {
@@ -69,7 +63,7 @@
             min4.innerHTML = Math.floor(d.consolidated_weather[3].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[3].max_temp)+"°";
             min5.innerHTML = Math.floor(d.consolidated_weather[4].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[4].max_temp)+"°";
             
-            test.remove();
+            // test.remove();
             // test.innerHTML.className="1";
             // city.innerHTML.classList="";
         }
