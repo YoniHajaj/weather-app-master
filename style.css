@@ -79,4 +79,8 @@ font-size: 25px;
 a{
    text-decoration: none;
 }
+.title{
+   text-align: center;
+   font-size: 31px;
+}
 
