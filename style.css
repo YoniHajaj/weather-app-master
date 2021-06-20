@@ -34,20 +34,13 @@ body{
 
 
 .h3-center{
-   
-color: sandybrown;
-   
-margin-right: auto;
-   
-width: 100%;
-   
-text-align: center;
-   
-font-size: 35px;
-   
-display: inline-block;
-   
-font-family: monospace;
+   color: sandybrown;
+   margin-right: auto;
+   width: 100%;
+   text-align: center;
+   font-size: 35px;
+   display: inline-block;
+   font-family: monospace;
 }
 
 
@@ -109,7 +102,7 @@ a{
 
 .title {
    margin-left: 619px;
-   margin-top: -91px;
+   margin-top: -50px;
    font-size: 25px;
    font-family: monospace;
    color: crimson;
@@ -172,10 +165,14 @@ h5{
    display: inline-block;
    font-size: 21px;
    font-family: monospace;
-   margin-top: 10px;
+   margin-top: 9px;
+   background-color: aquamarine;
+   border: 2px solid;
+   border-radius: 21px;
+   margin-left: 9px;
 }
 .test{
    display: inline-block;
    margin-left: 51px;
-   margin-top: 59px;
+   margin-top: 27px;
 }
