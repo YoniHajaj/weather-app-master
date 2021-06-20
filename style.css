@@ -1,6 +1,10 @@
 body{
    margin: 0;
    padding: 0;
+    background: url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg);
+   background-repeat:no-repeat  round;
+   background-size: 100%;
+   background-attachment: fixed;
 }
 
 
@@ -31,9 +35,7 @@ body{
 
 .h3-center{
    
-color: black;
-   
-margin-left: auto;
+color: sandybrown;
    
 margin-right: auto;
    
@@ -41,22 +43,24 @@ width: 100%;
    
 text-align: center;
    
-font-family: monospace;
+font-size: 35px;
    
-font-size: 25px;
+display: inline-block;
+   
+font-family: monospace;
 }
 
 
 .main{
    width: 100%;
-   height: 940px;
+   height: 960px;
    display: flex;
-   flex-direction: row;
-   margin-top: -80px;
-   background: url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg);
+   flex-direction: row-reverse;
+   margin-top: -76px;
+   /* background: url(https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg);
    background-repeat:no-repeat  round;
    background-size: 100%;
-   background-attachment: fixed;
+   background-attachment: fixed; */
    justify-content: space-around;
 }
 
@@ -68,7 +72,9 @@ font-size: 25px;
 
 
 .main-post h3{
-   color: white;
+   font-size: 23px;
+   color: greenyellow;
+   font-family: monospace;
 }
 .main-post img{
    width: 60px;
@@ -92,8 +98,84 @@ a{
 }*/
 
 .test div{
-   background-color: blueviolet;
+   background-color: beige;
    height: 29px;
    width: 180px;
    border: ridge;
+   text-align: center;
+   font-family: sans-serif;
 } 
+
+
+.title {
+   margin-left: 619px;
+   margin-top: -91px;
+   font-size: 25px;
+   font-family: monospace;
+   color: crimson;
+}
+
+.min-degrees1{
+
+color: firebrick;
+
+font-size: 20px;
+
+font-family: monospace;
+}
+.min-degrees2{
+
+color: firebrick;
+
+font-size: 20px;
+
+font-family: monospace;
+}
+.min-degrees3{
+
+color: firebrick;
+
+font-size: 20px;
+
+font-family: monospace;
+}
+.min-degrees4{
+
+color: firebrick;
+
+font-size: 20px;
+
+font-family: monospace;
+}
+.min-degrees5{
+
+color: firebrick;
+
+font-size: 20px;
+
+font-family: monospace;
+}
+
+.search1{
+   background-color: bisque;
+}
+label{
+   
+color: darksalmon;
+   
+font-size: 22px;
+   
+font-family: math;
+}
+
+h5{
+   display: inline-block;
+   font-size: 21px;
+   font-family: monospace;
+   margin-top: 10px;
+}
+.test{
+   display: inline-block;
+   margin-left: 51px;
+   margin-top: 59px;
+}
