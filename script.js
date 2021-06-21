@@ -7,6 +7,11 @@
         const min4 = document.querySelector('.min-degrees4');
         const min5 = document.querySelector('.min-degrees5');
         const titel = document.querySelector('.title');
+        const date1 = document.querySelector('.date1');
+        const date2 = document.querySelector('.date2');
+        const date3 = document.querySelector('.date3');
+        const date4 = document.querySelector('.date4');
+        const date5 = document.querySelector('.date5');
         
         let colo = 'red'
         sear.addEventListener("click",(params)=>{
@@ -62,7 +67,13 @@
             min3.innerHTML = Math.floor(d.consolidated_weather[2].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[2].max_temp)+"°";
             min4.innerHTML = Math.floor(d.consolidated_weather[3].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[3].max_temp)+"°";
             min5.innerHTML = Math.floor(d.consolidated_weather[4].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[4].max_temp)+"°";
-            
+            date1.innerHTML = d.consolidated_weather[0].applicable_date;
+            date2.innerHTML = d.consolidated_weather[1].applicable_date;
+            date3.innerHTML = d.consolidated_weather[2].applicable_date;
+            date4.innerHTML = d.consolidated_weather[3].applicable_date;
+            date5.innerHTML = d.consolidated_weather[4].applicable_date;
+
+
             // test.remove();
             // test.innerHTML.className="1";
             // city.innerHTML.classList="";
