@@ -1,18 +1,10 @@
-        let test = document.querySelector('.test');
+        let city = document.querySelector('.city');
         const form = document.querySelector('.form');
         let sear = document.getElementById('search');
         let iconDay = document.querySelectorAll('.icon-day');
-        
         const degrees = document.querySelectorAll('.min-degrees');
-        
         const titel = document.querySelector('.title');
-
         const date = document.querySelectorAll('.date');
-        // const date2 = document.querySelector('.date2');
-        // const date3 = document.querySelector('.date3');
-        // const date4 = document.querySelector('.date4');
-        // const date5 = document.querySelector('.date5');
-
         const description = document.querySelectorAll('.description');
        
 
@@ -44,7 +36,7 @@
                 //p.href = key.woeid;
                 p.classList.add( key.woeid);
                 i++;
-                test.appendChild(p);
+                city.appendChild(p);
                 
                 p.innerHTML = key.title;
 
@@ -53,8 +45,8 @@
             });
             console.log(data);
         }
-        let city = document.querySelector('.city');
-        test.addEventListener("click",(params)=>{
+        // let city = document.querySelector('.city');
+        city.addEventListener("click",(params)=>{
                 console.log(params.path[0].className);
                
                t(params.path[0].className);
@@ -69,8 +61,8 @@
 
 
             
-            // test.remove();
-            test.innerHTML=" ";
+            // city.remove();
+            city.innerHTML=" ";
             // city.innerHTML.classList="";
 
             for(let i = 0; i < iconDay.length ; i++){
