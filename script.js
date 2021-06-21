@@ -12,6 +12,13 @@
         const date3 = document.querySelector('.date3');
         const date4 = document.querySelector('.date4');
         const date5 = document.querySelector('.date5');
+        const description1 = document.querySelector('.description1');
+        const description2 = document.querySelector('.description2');
+        const description3 = document.querySelector('.description3');
+        const description4 = document.querySelector('.description4');
+        const description5 = document.querySelector('.description5');
+
+
         
         let colo = 'red'
         sear.addEventListener("click",(params)=>{
@@ -72,8 +79,11 @@
             date3.innerHTML = d.consolidated_weather[2].applicable_date;
             date4.innerHTML = d.consolidated_weather[3].applicable_date;
             date5.innerHTML = d.consolidated_weather[4].applicable_date;
-
-
+            description1.innerHTML = d.consolidated_weather[0].weather_state_name;
+            description2.innerHTML = d.consolidated_weather[1].weather_state_name;
+            description3.innerHTML = d.consolidated_weather[2].weather_state_name;
+            description4.innerHTML = d.consolidated_weather[3].weather_state_name;
+            description5.innerHTML = d.consolidated_weather[4].weather_state_name;
             // test.remove();
             // test.innerHTML.className="1";
             // city.innerHTML.classList="";
