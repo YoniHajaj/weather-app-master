@@ -174,15 +174,27 @@ margin-left: 81px;
    
 margin-top: 2px;
 }
-.date{color: brown;font-size: 22px;font-family: fantasy;margin-top: 27px;}
+.date{
+   color: brown;
+   font-size: 22px;
+   font-family: fantasy;
+   margin-top: 27px;
+}
 .min-degrees{
-margin-top: 20px;
-font-size: 25px;
-font-family: fantasy;
+
+margin-top: 20px;
+
+font-size: 25px;
+
+font-family: fantasy;
 }
 .description{
-font-size: 20px;
-margin-top: 12px;
-font-family: cursive;
-color: darkblue;
+
+font-size: 20px;
+
+margin-top: 12px;
+
+font-family: cursive;
+
+color: darkblue;
 }
