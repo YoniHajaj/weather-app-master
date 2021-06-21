@@ -1,6 +1,11 @@
         let test = document.querySelector('.test');
         const form = document.querySelector('.form');
         let sear = document.getElementById('search');
+        let icon1 = document.getElementById('icon1');
+        let icon2 = document.getElementById('icon2');
+        let icon3 = document.getElementById('icon3');
+        let icon4 = document.getElementById('icon4');
+        let icon5 = document.getElementById('icon5');
         const min1 = document.querySelector('.min-degrees1');
         const min2 = document.querySelector('.min-degrees2');
         const min3 = document.querySelector('.min-degrees3');
@@ -84,6 +89,11 @@
             description3.innerHTML = d.consolidated_weather[2].weather_state_name;
             description4.innerHTML = d.consolidated_weather[3].weather_state_name;
             description5.innerHTML = d.consolidated_weather[4].weather_state_name;
+            icon1.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[0].weather_state_abbr}.png`;
+            icon2.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[1].weather_state_abbr}.png`;
+            icon3.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[2].weather_state_abbr}.png`;
+            icon4.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[3].weather_state_abbr}.png`;
+            icon5.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[4].weather_state_abbr}.png`;
             // test.remove();
             // test.innerHTML.className="1";
             // city.innerHTML.classList="";
