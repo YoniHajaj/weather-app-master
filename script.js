@@ -1,27 +1,20 @@
         let test = document.querySelector('.test');
         const form = document.querySelector('.form');
         let sear = document.getElementById('search');
-        let icon1 = document.getElementById('icon1');
-        let icon2 = document.getElementById('icon2');
-        let icon3 = document.getElementById('icon3');
-        let icon4 = document.getElementById('icon4');
-        let icon5 = document.getElementById('icon5');
-        const min1 = document.querySelector('.min-degrees1');
-        const min2 = document.querySelector('.min-degrees2');
-        const min3 = document.querySelector('.min-degrees3');
-        const min4 = document.querySelector('.min-degrees4');
-        const min5 = document.querySelector('.min-degrees5');
+        let iconDay = document.querySelectorAll('.icon-day');
+        
+        const degrees = document.querySelectorAll('.min-degrees');
+        
         const titel = document.querySelector('.title');
-        const date1 = document.querySelector('.date1');
-        const date2 = document.querySelector('.date2');
-        const date3 = document.querySelector('.date3');
-        const date4 = document.querySelector('.date4');
-        const date5 = document.querySelector('.date5');
-        const description1 = document.querySelector('.description1');
-        const description2 = document.querySelector('.description2');
-        const description3 = document.querySelector('.description3');
-        const description4 = document.querySelector('.description4');
-        const description5 = document.querySelector('.description5');
+
+        const date = document.querySelectorAll('.date');
+        // const date2 = document.querySelector('.date2');
+        // const date3 = document.querySelector('.date3');
+        // const date4 = document.querySelector('.date4');
+        // const date5 = document.querySelector('.date5');
+
+        const description = document.querySelectorAll('.description');
+       
 
 
         
@@ -74,27 +67,16 @@
             titel.innerHTML = d.parent.title;
             console.log(d.parent.title)
 
-            min1.innerHTML = Math.floor(d.consolidated_weather[0].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[0].max_temp)+"°";
-            min2.innerHTML = Math.floor(d.consolidated_weather[1].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[1].max_temp)+"°";
-            min3.innerHTML = Math.floor(d.consolidated_weather[2].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[2].max_temp)+"°";
-            min4.innerHTML = Math.floor(d.consolidated_weather[3].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[3].max_temp)+"°";
-            min5.innerHTML = Math.floor(d.consolidated_weather[4].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[4].max_temp)+"°";
-            date1.innerHTML = d.consolidated_weather[0].applicable_date;
-            date2.innerHTML = d.consolidated_weather[1].applicable_date;
-            date3.innerHTML = d.consolidated_weather[2].applicable_date;
-            date4.innerHTML = d.consolidated_weather[3].applicable_date;
-            date5.innerHTML = d.consolidated_weather[4].applicable_date;
-            description1.innerHTML = d.consolidated_weather[0].weather_state_name;
-            description2.innerHTML = d.consolidated_weather[1].weather_state_name;
-            description3.innerHTML = d.consolidated_weather[2].weather_state_name;
-            description4.innerHTML = d.consolidated_weather[3].weather_state_name;
-            description5.innerHTML = d.consolidated_weather[4].weather_state_name;
-            icon1.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[0].weather_state_abbr}.png`;
-            icon2.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[1].weather_state_abbr}.png`;
-            icon3.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[2].weather_state_abbr}.png`;
-            icon4.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[3].weather_state_abbr}.png`;
-            icon5.src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[4].weather_state_abbr}.png`;
+
+            
             // test.remove();
-            // test.innerHTML.className="1";
+            test.innerHTML=" ";
             // city.innerHTML.classList="";
+
+            for(let i = 0; i < iconDay.length ; i++){
+                degrees[i].innerHTML = Math.floor(d.consolidated_weather[i].min_temp)+"°" +  "-" + Math.floor(d.consolidated_weather[i].max_temp)+"°";
+                date[i].innerHTML = d.consolidated_weather[i].applicable_date;
+                iconDay[i].src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[i].weather_state_abbr}.png`;
+                description[i].innerHTML = d.consolidated_weather[i].weather_state_name;
+            }
         }
