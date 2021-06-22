@@ -6,6 +6,7 @@
         const titel = document.querySelector('.title');
         const date = document.querySelectorAll('.date');
         const description = document.querySelectorAll('.description');
+        const weekday = document.querySelectorAll('.weekday');
        
 
 
@@ -70,5 +71,9 @@
                 date[i].innerHTML = d.consolidated_weather[i].applicable_date;
                 iconDay[i].src = `https://www.metaweather.com/static/img/weather/png/${d.consolidated_weather[i].weather_state_abbr}.png`;
                 description[i].innerHTML = d.consolidated_weather[i].weather_state_name;
+                var options = { weekday: 'long' };
+                const birthday = new Date(d.consolidated_weather[i].applicable_date);
+                weekday[i].innerHTML = new Intl.DateTimeFormat('he-il', options).format(birthday)
             }
+             
         }
